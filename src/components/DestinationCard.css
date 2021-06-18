@@ -1,0 +1,65 @@
+.destination__card__container{
+
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.destination__card{
+
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 300px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.destination__card__image{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s ease-in;
+}
+.destination__card__image-wrapper::after{
+    content: attr(data-category);
+    position: relative;
+    bottom: 30px;
+    padding: .3rem;
+    box-sizing: border-box;
+    background-color: #1f98f4;
+    color: white;
+    border-radius: 2px;
+
+}
+
+.destination__card__image:hover{
+    transform: scale(1.1);
+}
+
+.destination__card__info{
+    margin-top: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media  screen and (max-width: 768px){
+    .destination__card__container{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .destination__card{
+        width: 100%;
+        margin: 1rem 0;
+    }
+}

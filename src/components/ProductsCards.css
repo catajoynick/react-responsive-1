@@ -1,0 +1,10 @@
+.products-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #202020;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
